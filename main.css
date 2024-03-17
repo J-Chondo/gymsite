@@ -279,11 +279,10 @@ form{
     flex: 1 1 45rem;
 }
 input, textarea{
-    width: 50%;
+    width: 100%;
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 20px;
-    margin-left: 30%;
+    margin:auto;
+    padding: 30px;
 }
 textarea{
     height: 200px;
@@ -300,6 +299,18 @@ input[type="submit"] {
 
 
 @media (max-width: 980px) {
+    section{
+        padding: 40px 4%;
+    }
+    header{
+        padding: 15px 3%;
+    }
+    .home-text h1, span{
+        font-size: 40px;
+    }
+    .home-text h2{
+        font-size: 30px;
+    }
     .navlist ul {
         display: none;
     }
@@ -387,6 +398,12 @@ input[type="submit"] {
     }
 }
 @media (max-width: 740px) {
+    .home-text h1, span{
+        font-size: 35px;
+    }
+    .home-text h2{
+        font-size: 25px;
+    }
     .about-content .contact-info{
      display: flex;
      flex-direction: column;
