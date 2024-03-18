@@ -266,10 +266,11 @@ a.b-btn{
     margin-left: 10px;
 }
 
-
-.contact{
+.client-reviews{
     background-color: #111;
 }
+
+
 
 .contact-info{
     display: flex;
@@ -295,22 +296,66 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-
+.footer{
+    background-color: #111;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1rem;
+}
+f-heads p{
+    margin-top: 50%;
+}
+.f-links a{
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.f-socials i{
+    margin-top: 10px;
+    font-size: 24px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 50%;
+    padding: 10px;
+    color: red;
+    transition: all .5s;
+    cursor: pointer;
+}
+.f-socials i:hover{
+    transform: rotate(100deg);
+}
 
 
 @media (max-width: 980px) {
-    section{
-        padding: 40px 4%;
+    .home::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
     }
-    header{
-        padding: 15px 3%;
-    }
-    .home-text h1, span{
+    .home-text span{
         font-size: 40px;
     }
-    .home-text h2{
-        font-size: 30px;
+    .home-text h1{
+        font-size: 40px;
+        margin-bottom: 8px;
     }
+    .home-text h2{
+        font-weight: 100;
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+    .home{
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
+    }
+    
     .navlist ul {
         display: none;
     }
@@ -398,11 +443,26 @@ input[type="submit"] {
     }
 }
 @media (max-width: 740px) {
-    .home-text h1, span{
-        font-size: 35px;
+    .fa fa-bars{
+        color: aqua;
+    }
+    .home-text span{
+        font-size: 30px;
+    }
+    .home-text h1{
+        font-size: 30px;
+        margin-bottom: 6px;
     }
     .home-text h2{
-        font-size: 25px;
+        font-weight: 100;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .home{
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
     }
     .about-content .contact-info{
      display: flex;
