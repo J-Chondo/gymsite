@@ -181,32 +181,26 @@ a.p-btn i{
     color: #ccc;
 }
 
-
+/* about section styling */
 .about{
     background-color: #111;
 }
-.about .btn{
-    margin-top: 20px;
-    margin-left: 45%;
-}
-.about-content{
+
+.about-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.about-img{
-    flex: 1 1 45rem;
-   
+.about-container img{
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
 }
-.about-img img{
-    border-radius: 0.5rem;
-    border: 1rem solid #333;
-    height: 500px;
-    width: 500px;
-   
-}
-.about-content{
-    font-size: 30px;
+.about-container p{
+  margin-top: 10%;
+  font-size: 20px;
 }
 
 .review .slide{
@@ -221,7 +215,7 @@ a.p-btn i{
 .blog-info{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    gap: 1rem;
+    gap: 5rem;
 }
 
 .blogs img{
@@ -435,6 +429,17 @@ f-heads p{
         top: 20px;
         right: 20px;
     }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
 }
 
 @media(min-width: 901px) {
@@ -464,12 +469,16 @@ f-heads p{
         background-size: cover;
         background-position: center top;
     }
-    .about-content .contact-info{
+     .contact-info{
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
     }
+    .about-container p{
+        margin-top: 2%;
+        font-size: 15px;
+      }
     .program img{
         width: 100%;
     }
