@@ -335,6 +335,13 @@ f-heads p{
     transform: rotate(100deg);
 }
 
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 470px;
+        width: 350px;
+    }
+}
+
 
 @media (max-width: 980px) {
     .home::after{
