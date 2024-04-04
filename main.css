@@ -277,6 +277,25 @@ a.b-btn{
 .client-reviews{
     background-color: #111;
 }
+#gallary .swiper {
+    width: auto;
+    height: auto;
+  }
+
+  #gallary .swiper-slide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gallary .swiper-slide img {
+    margin-top: 20px;
+    display: block;
+    height: 75%;
+    width: 50%;
+    object-fit: cover;
+  }
 
 
 
@@ -461,6 +480,11 @@ f-heads p{
     .about .about-content .right{
         flex: 100%;
     }
+    #gallary .swiper-slide img {
+        margin-top: 10px;
+        height: 530px;
+        width: 400px;
+      }
 }
 
 @media(min-width: 901px) {
